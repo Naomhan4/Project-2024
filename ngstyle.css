@@ -1,85 +1,105 @@
-*{
-    padding:0px;
+* {
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-.clearfix::after{
-    clear:both;
-    display:block;
-    content:"";
+body {
+    background-color: gray;
+    color: white; 
 }
-#top{
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+#top {
     width: 100%;
     background-color: lightgray;
     min-height: 30px;
     text-align: center;
     margin-bottom: 5px;
 }
-#navigation{
-    width:100%;
-    min-height:30px;
+#navigation {
+    width: 100%;
+    min-height: 30px;
     background-color: gray;
     line-height: 30px;
     text-align: center;
-  
 }
-#head{
-    width:100%;
+#head {
+    width: 100%;
     background-color: gray;
     min-height: 75px;
     line-height: 75px;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 5px;
 }
-#banner{
-    width:100%;
+#banner {
+    width: 100%;
     background-color: gray;
     min-height: 50px;
     line-height: 50px;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 5px;
 }
-#boxes{
+#boxes {
     width: 100%;
     background-color: gray;
     min-height: 30px;
     text-align: center;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-#box1{
-    width: 30%;
+#box1, #box2, #box3 {
+    padding: 15px;
+    background-color: aliceblue;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    margin: 10px;
     min-height: 400px;
-    background-color:aliceblue;
-    line-height: 400px;
-    float: left;
-    margin-right: 5%;
-}
-#box2{
     width: 30%;
-    min-height: 400px;
-    background-color:aliceblue;
-    line-height: 400px;
-    float:left;
 }
-#box3{
-    width: 30%;
-    min-height: 400px;
-    background-color:aliceblue;
-    line-height: 400px;
-    float:right;
+#box1 img, #box2 img, #box3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: block;
 }
-#foot{
+#foot {
     width: 100%;
     background-color: darkorange;
     min-height: 25px;
     font-size: x-small;
-    text-align:center;
+    text-align: center;
     line-height: 25px;
     margin-top: 5px;
-    }
-
-#wrap{
-    width:80%;
-    margin-left:10%;
 }
-
+#wrap {
+    width: 80%;
+    margin-left: 10%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    background-color: grey;
+    padding-right: 10px;
+}
+a:link {
+    color: lightblue;
+    text-decoration: none;
+}
+a:active {
+    color: darkblue;
+}
+a:hover {
+    color: black;
+    font-weight: bold;
+}
