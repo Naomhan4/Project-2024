@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="ngstyle.css">
+    <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+        }
+
+        a:link {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: darkblue;
+        }
+
+        a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            background-color: grey;
+            padding-right: 10px;
+        }
+
+        #navigation {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #boxes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #box1, #box2, #box3 {
+            padding: 15px;
+            background-color: lightgrey;
+            border: 3px solid whitesmoke;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+            margin: 10px;
+        }
+
+        #box1 img, #box2 img, #box3 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 3px solid black;
+            display: block;
+        }
+
+        #boxes div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="external">
+        <h1 align="center">PHONES</h1>
+    </div>
+    <hr>
+    <div id="navigation">
+        <ul>
+            <li><a href="#nokia">Nokia</a></li>
+            <li><a href="#Apple">Apple</a></li>
+            <li><a href="#Samsung">Samsung</a></li>
+        </ul>
+    </div>
+    <div id="boxes" class="clearfix">
+        <div id="box1">
+            <li>
+                <a href="https://www.nokia.com">
+                    <img src="Nokialogo.jpg" alt="Nokia Logo" height="250" width="250" border="2" />
+                </a>
+            </li>
+        </div>
+        <div id="box2">
+            <li>
+                <a href="#Apple">
+                    <img src="applelogo.jpg" alt="Apple Logo" height="250" width="250" border="2" />
+                </a>
+            </li>
+        </div>
+        <div id="box3">
+            <li>
+                <a href="#Samsung">
+                    <img src="samsunglogo.jpg" alt="Samsung Logo" height="250" width="250" border="2" />
+                </a>
+            </li>
+        </div>
+    </div>
+</body>
+</html>

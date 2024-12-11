@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="ngstyle.css">
 </head>
 <body>
     <script src="indexmain.js"></script>
     <div align="right">
-       <!-- Name: <input type="text" id="name" placeholder="Enter name"> -->
-        Password: <input type="text" id="password" placeholder="Enter Password">
-        <input type="button" value="Submit" onclick="age()">
+        <label for="username">Username: </label>
+        <input type="text" id="username" placeholder="Enter Username">
+        <br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="Enter Password">
+        
+        <input type="button" value="Submit" onclick="validatePassword()">
         <p id="correct">Correct Password</p>
         <p id="incorrect">Incorrect Password</p>
     </div>
-    <div class="external"><h1 align="middle">PHONES</h1></div> <hr>
-    <div id="navigation"><ul>
-        <li><a href="#nokia" text-align="left">Nokia</a></li>
-        <li><a href="#Apple">Apple</a></li>
-        <li><a href="#Samsung">Samsung</a></li>
-    </ul></div>
-    <div id="boxes" class="clearfix">
-        <div id="box1"><li><a href="/nokia.html"><img src="Nokialogo.jpg" alt="Image not available" height="250" width="250" border="2"></a></li> </div>
-        <div id="box2"><li><a href="/indexSK.html"><img src="applelogo.jpg" alt="Image not available" height="250" width="250" border="2"></a></li></div>
-        <div id="box3"><li><a href="#Samsung"><img src="samsunglogo.jpg" alt="Image not available" height="250" width="250" border="2"></a></li></div>
+
+    <div class="external">
+        <h1 align="center">PHONES</h1>
     </div>
-    
+    <hr>
+    <div id="navigation">
+        <ul>
+            <li><a href="#nokia" style="text-align:left;">Nokia</a></li>
+            <li><a href="#Apple" style="text-align:left;">Apple</a></li>
+            <li><a href="#Samsung" style="text-align:left;">Samsung</a></li>
+        </ul>
+    </div>
+    <div id="boxes">
+        <div id="box1">
+            <a href="/nokia.html"><img src="Nokialogo.jpg" alt="Nokia Logo" height="250" width="250" border="2"></a>
+        </div>
+        <div id="box2">
+            <a href="/indexSK.html"><img src="applelogo.jpg" alt="Apple Logo" height="250" width="250" border="2"></a>
+        </div>
+        <div id="box3">
+            <a href="#Samsung"><img src="samsunglogo.jpg" alt="Samsung Logo" height="250" width="250" border="2"></a>
+        </div>
+    </div>
+
+    <script>
+        function validatePassword() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const correctPassword = "1234";
+            if (password === correctPassword) {
+                document.getElementById("correct").style.display = "block";
+                document.getElementById("incorrect").style.display = "none";
+                document.querySelector("div[align='right']").style.display = "none";
+                const usernameDisplay = document.createElement("div");
+                usernameDisplay.id = "usernameDisplay";
+                usernameDisplay.innerText = `Welcome, ${username}`;
+                document.body.appendChild(usernameDisplay);
+                usernameDisplay.style.display = "block";
+            } else {
+                document.getElementById("incorrect").style.display = "block";
+                document.getElementById("correct").style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
