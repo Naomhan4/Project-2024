@@ -6,7 +6,7 @@
 
 body {
     background-color: #2e3440; 
-    color: #eceff4; 
+    color: #ffffff; 
 }
 
 .clearfix::after {
@@ -17,7 +17,7 @@ body {
 
 #top {
     width: 100%;
-    background-color: #3b4252; 
+    background-color:#2e3440; 
     min-height: 30px;
     text-align: center;
     margin-bottom: 5px;
@@ -25,7 +25,7 @@ body {
 
 #head {
     width: 100%;
-    background-color: #434c5e; 
+    background-color: #2e3440; 
     min-height: 75px;
     line-height: 75px;
     text-align: center;
@@ -34,7 +34,7 @@ body {
 
 #banner {
     width: 100%;
-    background-color: #3b4252; 
+    background-color: #2e3440; 
     min-height: 50px;
     line-height: 50px;
     text-align: center;
@@ -44,8 +44,8 @@ body {
 #navigation {
     width: 100%;
     min-height: 30px;
-    background-color: #3b4252;
-    line-height: 30px;
+    background-color: #4c566a; /* reminder */
+    line-height: 31px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -57,27 +57,27 @@ body {
 
 #navigation li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 260px;
 }
 
 #navigation a {
     text-decoration: none;
-    color: #eceff4;
+    color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 4px 5px;
     border-radius: 5px;
     background-color: #4c566a; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #navigation a:hover {
-    background-color: #3b4252;
+    background-color: #2e3440;
 }
-
+/*Made by NG*/
 #boxes {
     width: 100%;
-    background-color: #444;
+    background-color: #2e3440;
     min-height: 30px;
     text-align: center;
     margin-bottom: 5px;
@@ -89,7 +89,7 @@ body {
 #box1, #box2, #box3 {
     padding: 15px;
     background-color: #3b4252; 
-    border: 3px solid #eceff4;
+    border: 3px solid #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px;
@@ -101,14 +101,14 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    border: 3px solid #eceff4;
+    border: 3px solid #ffffff;
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #box1:hover img {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(#4c566a);
 }
 
 #foot {
@@ -134,7 +134,7 @@ ul {
 
 li {
     display: inline-block;
-    background-color: #4c566a;
+    background-color: #4c566a; /*other*/
     padding-right: 10px;
 }
 

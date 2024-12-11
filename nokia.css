@@ -41,6 +41,7 @@ h1 {
 #navigation a:hover {
     background-color: #4c566a; 
 }
+/*Made by NG*/
 #boxes {
     display: flex;
     justify-content: center;
