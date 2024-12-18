@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px; 
+    color: red;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    color: red;
+    margin-top: 18px;
+}
+
+form {
+    margin-top: 14px;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
