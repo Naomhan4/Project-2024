@@ -17,3 +17,21 @@ function agechecker()
         }
 }
 //Made by NG
+function validatePassword() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const correctPassword = "1234";
+    if (password === correctPassword) {
+        document.getElementById("correct").style.display = "block";
+        document.getElementById("incorrect").style.display = "none";
+        document.querySelector("div[align='right']").style.display = "none";
+        const usernameDisplay = document.createElement("div");
+        usernameDisplay.id = "usernameDisplay";
+        usernameDisplay.innerText = `Welcome, ${username}`;
+        document.body.appendChild(usernameDisplay);
+        usernameDisplay.style.display = "block";
+    } else {
+        document.getElementById("incorrect").style.display = "block";
+        document.getElementById("correct").style.display = "none";
+    }
+}

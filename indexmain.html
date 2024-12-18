@@ -38,32 +38,11 @@
             <a href="/nokia.html"><img src="Nokialogo.jpg" alt="Nokia Logo" height="250" width="250" border="2"></a>
         </div>
         <div id="box2">
-            <a href="/indexSK.html"><img src="applelogo.jpg" alt="Apple Logo" height="250" width="250" border="2"></a>
+            <a href="/indexSK.html"><img src="Apple-Logo.jpg" alt="Apple Logo" height="250" width="250" border="2"></a>
         </div>
         <div id="box3">
             <a href="/indexPG.html"><img src="samsunglogo.jpg" alt="Samsung Logo" height="250" width="250" border="2"></a>
         </div>
     </div>
-
-    <script>
-        function validatePassword() {
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            const correctPassword = "1234";
-            if (password === correctPassword) {
-                document.getElementById("correct").style.display = "block";
-                document.getElementById("incorrect").style.display = "none";
-                document.querySelector("div[align='right']").style.display = "none";
-                const usernameDisplay = document.createElement("div");
-                usernameDisplay.id = "usernameDisplay";
-                usernameDisplay.innerText = `Welcome, ${username}`;
-                document.body.appendChild(usernameDisplay);
-                usernameDisplay.style.display = "block";
-            } else {
-                document.getElementById("incorrect").style.display = "block";
-                document.getElementById("correct").style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
