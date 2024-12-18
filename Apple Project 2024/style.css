@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: lightblue;
+  }
+  
+  header {
+    background-color: #1428a0; /* Samsung Blue */
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #banner {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  #banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #products {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  footer {
+    background-color: #1428a0;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .image1 {
+    width: 400px;
+    height: 400px;
+  }
